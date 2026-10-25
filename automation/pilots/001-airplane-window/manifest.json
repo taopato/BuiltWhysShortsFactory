@@ -1,0 +1,54 @@
+{
+  "job_id": "pilot-001",
+  "ai_disclosure_required": true,
+  "fact_sources": [
+    {
+      "title": "Science of Flight booklet",
+      "publisher": "Airbus Foundation",
+      "url": "https://www.foundation.airbus.com/sites/g/files/jlcbta166/files/2022-09/science_of_flight_booklet.pdf",
+      "accessed_at": "2026-07-15"
+    },
+    {
+      "title": "Why don't windows on planes shatter due to the pressure difference?",
+      "publisher": "Smithsonian National Air and Space Museum",
+      "url": "https://howthingsfly.si.edu/ask-an-explainer/why-dont-windows-planes-shatter-due-pressure-difference-inside-and-outside-cabin",
+      "accessed_at": "2026-07-15"
+    },
+    {
+      "title": "Why aircraft windows have breather holes",
+      "publisher": "ABEAR technical explainer",
+      "url": "https://www.abear.com.br/imprensa/agencia-abear/noticias/qual-a-funcao-do-pequeno-furo-encontrado-nas-janelas-dos-avioes-abear-responde/",
+      "accessed_at": "2026-07-15"
+    }
+  ],
+  "assets": [
+    {
+      "type": "ai_generated_image",
+      "source_url": "local://automation/pilots/001-airplane-window/assets/scene-01-window-closeup.png",
+      "license": "OpenAI generated output; project-owned use",
+      "commercial_use": true,
+      "generation_status": "generated"
+    },
+    {
+      "type": "ai_generated_image",
+      "source_url": "local://automation/pilots/001-airplane-window/assets/scene-02-layer-cutaway.png",
+      "license": "OpenAI generated output; project-owned use",
+      "commercial_use": true,
+      "generation_status": "generated"
+    },
+    {
+      "type": "ai_generated_image",
+      "source_url": "local://automation/pilots/001-airplane-window/assets/scene-03-pressure-flow.png",
+      "license": "OpenAI generated output; project-owned use",
+      "commercial_use": true,
+      "generation_status": "generated"
+    },
+    {
+      "type": "ai_generated_image",
+      "source_url": "local://automation/pilots/001-airplane-window/assets/scene-04-backup-pane.png",
+      "license": "OpenAI generated output; project-owned use",
+      "commercial_use": true,
+      "generation_status": "generated"
+    }
+  ]
+}

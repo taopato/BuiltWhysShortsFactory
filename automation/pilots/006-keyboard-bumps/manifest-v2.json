@@ -1,0 +1,85 @@
+{
+  "job_id": "batch-006",
+  "ai_disclosure_required": true,
+  "fact_sources": [
+    {
+      "title": "Human Factors Design Standard: Keyboards",
+      "publisher": "Federal Aviation Administration",
+      "url": "https://hf.tc.faa.gov/hfds/download-hfds/hfds_pdfs/hfdsKeyboardsDraft.pdf",
+      "accessed_at": "2026-07-15"
+    },
+    {
+      "title": "Computer keyboard having surface textured home keys",
+      "publisher": "United States Patent and Trademark Office",
+      "url": "https://patents.google.com/patent/US20030206761A1/en",
+      "accessed_at": "2026-07-15"
+    }
+  ],
+  "assets": [
+    {
+      "type": "ai_generated_image",
+      "source_url": "local://automation/pilots/006-keyboard-bumps/assets-v2/scene-01-hero.png",
+      "license": "Project-owned AI-generated original visual",
+      "commercial_use": true,
+      "generation_status": "generated"
+    },
+    {
+      "type": "stock_video",
+      "source_url": "https://www.pexels.com/video/a-person-typing-on-a-laptop-computer-5083053/",
+      "license": "Pexels License; edited as part of an original educational video",
+      "commercial_use": true,
+      "contributor": "cottonbro studio",
+      "contributor_url": "https://www.pexels.com/@cottonbro",
+      "local_file": "automation/pilots/006-keyboard-bumps/assets-v2/scene-02-pexels.mp4"
+    },
+    {
+      "type": "stock_video",
+      "source_url": "https://www.pexels.com/video/a-person-typing-on-a-laptop-9520978/",
+      "license": "Pexels License; edited as part of an original educational video",
+      "commercial_use": true,
+      "contributor": "Ron Lach",
+      "contributor_url": "https://www.pexels.com/@ron-lach",
+      "local_file": "automation/pilots/006-keyboard-bumps/assets-v2/scene-03-pexels.mp4"
+    },
+    {
+      "type": "stock_video",
+      "source_url": "https://www.pexels.com/video/typing-on-a-laptop-7679837/",
+      "license": "Pexels License; edited as part of an original educational video",
+      "commercial_use": true,
+      "contributor": "MART  PRODUCTION",
+      "contributor_url": "https://www.pexels.com/@mart-production",
+      "local_file": "automation/pilots/006-keyboard-bumps/assets-v2/scene-04-pexels.mp4"
+    },
+    {
+      "type": "stock_video",
+      "source_url": "https://www.pexels.com/video/video-of-a-person-typing-on-a-laptop-5473913/",
+      "license": "Pexels License; edited as part of an original educational video",
+      "commercial_use": true,
+      "contributor": "cottonbro studio",
+      "contributor_url": "https://www.pexels.com/@cottonbro",
+      "local_file": "automation/pilots/006-keyboard-bumps/assets-v2/scene-05-pexels.mp4"
+    },
+    {
+      "type": "stock_video",
+      "source_url": "https://www.pexels.com/video/call-center-agents-typing-8682965/",
+      "license": "Pexels License; edited as part of an original educational video",
+      "commercial_use": true,
+      "contributor": "Ron Lach",
+      "contributor_url": "https://www.pexels.com/@ron-lach",
+      "local_file": "automation/pilots/006-keyboard-bumps/assets-v2/scene-06-pexels.mp4"
+    },
+    {
+      "type": "procedural_diagram",
+      "source_url": "local://automation/pilots/006-keyboard-bumps/assets-v2/scene-07-diagram.png",
+      "license": "Project-generated original diagram",
+      "commercial_use": true
+    },
+    {
+      "type": "procedural_diagram",
+      "source_url": "local://automation/pilots/006-keyboard-bumps/assets-v2/scene-08-diagram.png",
+      "license": "Project-generated original diagram",
+      "commercial_use": true
+    }
+  ],
+  "visual_strategy": "one original hero, five distinct Pexels clips, two original technical diagrams; no scene reuse"
+}

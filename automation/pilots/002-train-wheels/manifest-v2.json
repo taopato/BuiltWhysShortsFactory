@@ -1,0 +1,85 @@
+{
+  "job_id": "batch-002",
+  "ai_disclosure_required": true,
+  "fact_sources": [
+    {
+      "title": "TCRP Report 57: Track Design Handbook for Light Rail Transit",
+      "publisher": "Transportation Research Board",
+      "url": "https://onlinepubs.trb.org/onlinepubs/tcrp/tcrp_rpt_57-b.pdf",
+      "accessed_at": "2026-07-15"
+    },
+    {
+      "title": "Integrated Model Predictive Control of High-Speed Railway Running Gears",
+      "publisher": "arXiv research paper",
+      "url": "https://arxiv.org/abs/2309.09769",
+      "accessed_at": "2026-07-15"
+    }
+  ],
+  "assets": [
+    {
+      "type": "ai_generated_image",
+      "source_url": "local://automation/pilots/002-train-wheels/assets-v2/scene-01-hero.png",
+      "license": "Project-owned AI-generated original visual",
+      "commercial_use": true,
+      "generation_status": "generated"
+    },
+    {
+      "type": "stock_video",
+      "source_url": "https://www.pexels.com/video/iconic-flying-scotsman-steam-locomotive-close-up-34458787/",
+      "license": "Pexels License; edited as part of an original educational video",
+      "commercial_use": true,
+      "contributor": "David Pickup |  Advertising & Marketing  🇬🇧",
+      "contributor_url": "https://www.pexels.com/@davidpickup",
+      "local_file": "automation/pilots/002-train-wheels/assets-v2/scene-02-pexels.mp4"
+    },
+    {
+      "type": "stock_video",
+      "source_url": "https://www.pexels.com/video/indian-high-speed-crossing-28117841/",
+      "license": "Pexels License; edited as part of an original educational video",
+      "commercial_use": true,
+      "contributor": "indianrailwayvibes",
+      "contributor_url": "https://www.pexels.com/@indianrailwayvibes-1595603606",
+      "local_file": "automation/pilots/002-train-wheels/assets-v2/scene-03-pexels.mp4"
+    },
+    {
+      "type": "stock_video",
+      "source_url": "https://www.pexels.com/video/an-auto-mechanic-assembling-greasy-car-parts-7568437/",
+      "license": "Pexels License; edited as part of an original educational video",
+      "commercial_use": true,
+      "contributor": "cottonbro studio",
+      "contributor_url": "https://www.pexels.com/@cottonbro",
+      "local_file": "automation/pilots/002-train-wheels/assets-v2/scene-04-pexels.mp4"
+    },
+    {
+      "type": "stock_video",
+      "source_url": "https://www.pexels.com/video/scenic-train-journey-through-countryside-35858844/",
+      "license": "Pexels License; edited as part of an original educational video",
+      "commercial_use": true,
+      "contributor": "indianrailwayvibes",
+      "contributor_url": "https://www.pexels.com/@indianrailwayvibes-1595603606",
+      "local_file": "automation/pilots/002-train-wheels/assets-v2/scene-05-pexels.mp4"
+    },
+    {
+      "type": "stock_video",
+      "source_url": "https://www.pexels.com/video/a-man-inspecting-the-undercarriage-of-a-vehicle-7019385/",
+      "license": "Pexels License; edited as part of an original educational video",
+      "commercial_use": true,
+      "contributor": "cottonbro studio",
+      "contributor_url": "https://www.pexels.com/@cottonbro",
+      "local_file": "automation/pilots/002-train-wheels/assets-v2/scene-06-pexels.mp4"
+    },
+    {
+      "type": "procedural_diagram",
+      "source_url": "local://automation/pilots/002-train-wheels/assets-v2/scene-07-diagram.png",
+      "license": "Project-generated original diagram",
+      "commercial_use": true
+    },
+    {
+      "type": "procedural_diagram",
+      "source_url": "local://automation/pilots/002-train-wheels/assets-v2/scene-08-diagram.png",
+      "license": "Project-generated original diagram",
+      "commercial_use": true
+    }
+  ],
+  "visual_strategy": "one original hero, five distinct Pexels clips, two original technical diagrams; no scene reuse"
+}

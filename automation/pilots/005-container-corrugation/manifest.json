@@ -1,0 +1,12 @@
+{
+  "job_id":"batch-005","ai_disclosure_required":true,
+  "fact_sources":[
+    {"title":"Rigidity of corrugated plate sidewalls and its effect on modular structural design","publisher":"Engineering Structures","url":"https://www.sciencedirect.com/science/article/pii/S0141029618311167","accessed_at":"2026-07-15"},
+    {"title":"Shipping container with corrugated wall support system","publisher":"United States Patent and Trademark Office","url":"https://patents.google.com/patent/US20120087760A1/en","accessed_at":"2026-07-15"}
+  ],
+  "assets":[
+    {"type":"ai_generated_image","source_url":"local://automation/pilots/005-container-corrugation/assets/scene-01-container-wall.png","license":"OpenAI generated output; project-owned use","commercial_use":true,"generation_status":"generated"},
+    {"type":"procedural_diagram","source_url":"local://automation/pilots/005-container-corrugation/assets/scene-02-flat-vs-folded.png","license":"Project-generated original diagram","commercial_use":true,"generation_status":"generated"},
+    {"type":"procedural_diagram","source_url":"local://automation/pilots/005-container-corrugation/assets/scene-03-frame-bracing.png","license":"Project-generated original diagram","commercial_use":true,"generation_status":"generated"}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "job_id":"batch-004","ai_disclosure_required":true,
+  "fact_sources":[
+    {"title":"What are Frits?","publisher":"Dorman Products Shop Press","url":"https://shoppress.dormanproducts.com/what-are-frits-dots-on-windshield/","accessed_at":"2026-07-15"},
+    {"title":"Inkjet Glass Market Technology Update","publisher":"Global Inkjet Systems","url":"https://www.globalinkjetsystems.com/wp-content/uploads/Debbie-Thorp-Inkjet-Glass-Market-Technology-Update.pdf","accessed_at":"2026-07-15"}
+  ],
+  "assets":[
+    {"type":"ai_generated_image","source_url":"local://automation/pilots/004-windshield-frit/assets/scene-01-frit-closeup.png","license":"OpenAI generated output; project-owned use","commercial_use":true,"generation_status":"generated"},
+    {"type":"procedural_diagram","source_url":"local://automation/pilots/004-windshield-frit/assets/scene-02-bond-cutaway.png","license":"Project-generated original diagram","commercial_use":true,"generation_status":"generated"},
+    {"type":"procedural_diagram","source_url":"local://automation/pilots/004-windshield-frit/assets/scene-03-sun-gradient.png","license":"Project-generated original diagram","commercial_use":true,"generation_status":"generated"}
+  ]
+}

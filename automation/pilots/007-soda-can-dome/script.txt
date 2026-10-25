@@ -1,0 +1,7 @@
+The bottom of a soda can curves inward because a flat base would be a weak pressure plate.
+
+Carbon dioxide pushes outward on every surface inside the can. A broad flat bottom would flex and bulge unless manufacturers used thicker aluminum. Forming the base into a dome spreads the load through a curved surface, making it much harder to deform with the same thin sheet of metal.
+
+An outer ring, called the foot, still gives the can a stable surface to stand on. Between that foot and the dome, engineers carefully tune the shape to resist buckling, impacts, and changes in pressure as the drink warms.
+
+That small inward curve is why an extremely light container can safely hold a pressurized drink without needing a heavy bottom.

@@ -1,0 +1,12 @@
+{
+  "job_id":"batch-003","ai_disclosure_required":true,
+  "fact_sources":[
+    {"title":"Operation, Maintenance and Testing of Escalators","publisher":"Indian Railways CAMTECH","url":"https://indianrailways.gov.in/railwayboard/uploads/directorate/eff_res/camtech/ElectricalEngineering/YearWise/Booklet%20on%20Operation%2C%20Maintenance%20%26%20Testing%20of%20Escalators.pdf","accessed_at":"2026-07-15"},
+    {"title":"Escalator and Moving Walk Braking Systems","publisher":"ASME","url":"https://www.asme.org/codes-standards/find-codes-standards/csab4410asmea1710-escalator-and-moving-walk-braking-systems","accessed_at":"2026-07-15"}
+  ],
+  "assets":[
+    {"type":"ai_generated_image","source_url":"local://automation/pilots/003-escalator-grooves/assets/scene-01-grooves.png","license":"OpenAI generated output; project-owned use","commercial_use":true,"generation_status":"generated"},
+    {"type":"procedural_diagram","source_url":"local://automation/pilots/003-escalator-grooves/assets/scene-02-comb-mesh.png","license":"Project-generated original diagram","commercial_use":true,"generation_status":"generated"},
+    {"type":"procedural_diagram","source_url":"local://automation/pilots/003-escalator-grooves/assets/scene-03-handoff.png","license":"Project-generated original diagram","commercial_use":true,"generation_status":"generated"}
+  ]
+}

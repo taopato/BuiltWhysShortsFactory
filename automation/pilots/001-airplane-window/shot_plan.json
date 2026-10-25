@@ -1,0 +1,34 @@
+{
+  "title": "The Tiny Hole That Protects an Airplane Window",
+  "language": "en-US",
+  "target_duration_seconds": 48,
+  "voice": "en-US-AndrewMultilingualNeural",
+  "music": "none",
+  "scenes": [
+    {
+      "seconds": "0-5",
+      "asset": "scene-01-window-closeup.png",
+      "direction": "Macro view of the breather hole; fast push-in; subtitle emphasizes NOT A LEAK."
+    },
+    {
+      "seconds": "5-16",
+      "asset": "scene-02-layer-cutaway.png",
+      "direction": "Clean exploded cutaway of three window layers with no embedded text; animate labels in the editor."
+    },
+    {
+      "seconds": "16-31",
+      "asset": "scene-03-pressure-flow.png",
+      "direction": "Cabin air moves through the middle-pane hole into the inter-pane gap; add arrows in post."
+    },
+    {
+      "seconds": "31-42",
+      "asset": "scene-04-backup-pane.png",
+      "direction": "Outer pane highlighted as normal load bearer, middle pane visually shown as backup."
+    },
+    {
+      "seconds": "42-50",
+      "asset": "scene-01-window-closeup.png",
+      "direction": "Return to the opening macro shot and resolve the hook."
+    }
+  ]
+}

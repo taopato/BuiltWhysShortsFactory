@@ -1,0 +1,12 @@
+{
+  "job_id":"batch-008","ai_disclosure_required":true,
+  "fact_sources":[
+    {"title":"Hook for measuring tape","publisher":"United States Patent and Trademark Office","url":"https://patents.google.com/patent/US2574272A/en","accessed_at":"2026-07-15"},
+    {"title":"Tape measure with hook thickness compensation","publisher":"United States Patent and Trademark Office","url":"https://patents.google.com/patent/US11460283B1/en","accessed_at":"2026-07-15"}
+  ],
+  "assets":[
+    {"type":"ai_generated_image","source_url":"local://automation/pilots/008-tape-hook/assets/scene-01-loose-hook.png","license":"OpenAI generated output; project-owned use","commercial_use":true,"generation_status":"generated"},
+    {"type":"procedural_diagram","source_url":"local://automation/pilots/008-tape-hook/assets/scene-02-pull-measure.png","license":"Project-generated original diagram","commercial_use":true,"generation_status":"generated"},
+    {"type":"procedural_diagram","source_url":"local://automation/pilots/008-tape-hook/assets/scene-03-push-measure.png","license":"Project-generated original diagram","commercial_use":true,"generation_status":"generated"}
+  ]
+}

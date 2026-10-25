@@ -1,0 +1,7 @@
+If the hook on your tape measure wiggles, do not tighten it. That movement is the calibration.
+
+When you hook the tape over an outside edge and pull, the hook slides outward. The measurement begins from its inner face. But when you push the tape against a wall for an inside measurement, the hook slides inward and its own metal thickness becomes part of the measured distance.
+
+The slots around the rivets allow the hook to move by approximately that thickness. That way, both pulling from an edge and pushing against a surface can start at the same zero point. If the hook were fixed, one of those measurements would be off.
+
+So the loose part is not bad assembly. It is a tiny mechanical correction built into the tool.

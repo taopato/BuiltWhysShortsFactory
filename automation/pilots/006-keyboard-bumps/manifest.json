@@ -1,0 +1,12 @@
+{
+  "job_id":"batch-006","ai_disclosure_required":true,
+  "fact_sources":[
+    {"title":"Human Factors Design Standard: Keyboards","publisher":"Federal Aviation Administration","url":"https://hf.tc.faa.gov/hfds/download-hfds/hfds_pdfs/hfdsKeyboardsDraft.pdf","accessed_at":"2026-07-15"},
+    {"title":"Computer keyboard having surface textured home keys","publisher":"United States Patent and Trademark Office","url":"https://patents.google.com/patent/US20030206761A1/en","accessed_at":"2026-07-15"}
+  ],
+  "assets":[
+    {"type":"ai_generated_image","source_url":"local://automation/pilots/006-keyboard-bumps/assets/scene-01-fj-macro.png","license":"OpenAI generated output; project-owned use","commercial_use":true,"generation_status":"generated"},
+    {"type":"procedural_diagram","source_url":"local://automation/pilots/006-keyboard-bumps/assets/scene-02-home-row.png","license":"Project-generated original diagram","commercial_use":true,"generation_status":"generated"},
+    {"type":"procedural_diagram","source_url":"local://automation/pilots/006-keyboard-bumps/assets/scene-03-touch-map.png","license":"Project-generated original diagram","commercial_use":true,"generation_status":"generated"}
+  ]
+}

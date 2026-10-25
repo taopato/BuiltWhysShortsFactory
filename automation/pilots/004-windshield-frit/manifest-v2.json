@@ -1,0 +1,85 @@
+{
+  "job_id": "batch-004",
+  "ai_disclosure_required": true,
+  "fact_sources": [
+    {
+      "title": "What are Frits?",
+      "publisher": "Dorman Products Shop Press",
+      "url": "https://shoppress.dormanproducts.com/what-are-frits-dots-on-windshield/",
+      "accessed_at": "2026-07-15"
+    },
+    {
+      "title": "Inkjet Glass Market Technology Update",
+      "publisher": "Global Inkjet Systems",
+      "url": "https://www.globalinkjetsystems.com/wp-content/uploads/Debbie-Thorp-Inkjet-Glass-Market-Technology-Update.pdf",
+      "accessed_at": "2026-07-15"
+    }
+  ],
+  "assets": [
+    {
+      "type": "ai_generated_image",
+      "source_url": "local://automation/pilots/004-windshield-frit/assets-v2/scene-01-hero.png",
+      "license": "Project-owned AI-generated original visual",
+      "commercial_use": true,
+      "generation_status": "generated"
+    },
+    {
+      "type": "stock_video",
+      "source_url": "https://www.pexels.com/video/person-wiping-a-windscreen-8469682/",
+      "license": "Pexels License; edited as part of an original educational video",
+      "commercial_use": true,
+      "contributor": "Anastasia  Shuraeva",
+      "contributor_url": "https://www.pexels.com/@anastasia-shuraeva",
+      "local_file": "automation/pilots/004-windshield-frit/assets-v2/scene-02-pexels.mp4"
+    },
+    {
+      "type": "stock_video",
+      "source_url": "https://www.pexels.com/video/a-man-in-a-plaid-shirt-is-in-a-car-4482082/",
+      "license": "Pexels License; edited as part of an original educational video",
+      "commercial_use": true,
+      "contributor": "cottonbro studio",
+      "contributor_url": "https://www.pexels.com/@cottonbro",
+      "local_file": "automation/pilots/004-windshield-frit/assets-v2/scene-03-pexels.mp4"
+    },
+    {
+      "type": "stock_video",
+      "source_url": "https://www.pexels.com/video/a-man-and-woman-in-a-car-4482238/",
+      "license": "Pexels License; edited as part of an original educational video",
+      "commercial_use": true,
+      "contributor": "cottonbro studio",
+      "contributor_url": "https://www.pexels.com/@cottonbro",
+      "local_file": "automation/pilots/004-windshield-frit/assets-v2/scene-04-pexels.mp4"
+    },
+    {
+      "type": "stock_video",
+      "source_url": "https://www.pexels.com/video/driving-through-scenic-road-on-sunny-day-28824679/",
+      "license": "Pexels License; edited as part of an original educational video",
+      "commercial_use": true,
+      "contributor": "Mirza  Muneeb",
+      "contributor_url": "https://www.pexels.com/@mirza-muneeb-151629086",
+      "local_file": "automation/pilots/004-windshield-frit/assets-v2/scene-05-pexels.mp4"
+    },
+    {
+      "type": "stock_video",
+      "source_url": "https://www.pexels.com/video/a-person-wiping-a-window-car-6873153/",
+      "license": "Pexels License; edited as part of an original educational video",
+      "commercial_use": true,
+      "contributor": "Tima Miroshnichenko",
+      "contributor_url": "https://www.pexels.com/@tima-miroshnichenko",
+      "local_file": "automation/pilots/004-windshield-frit/assets-v2/scene-06-pexels.mp4"
+    },
+    {
+      "type": "procedural_diagram",
+      "source_url": "local://automation/pilots/004-windshield-frit/assets-v2/scene-07-diagram.png",
+      "license": "Project-generated original diagram",
+      "commercial_use": true
+    },
+    {
+      "type": "procedural_diagram",
+      "source_url": "local://automation/pilots/004-windshield-frit/assets-v2/scene-08-diagram.png",
+      "license": "Project-generated original diagram",
+      "commercial_use": true
+    }
+  ],
+  "visual_strategy": "one original hero, five distinct Pexels clips, two original technical diagrams; no scene reuse"
+}

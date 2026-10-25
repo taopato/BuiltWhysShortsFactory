@@ -1,0 +1,9 @@
+{
+  "title": "Train Wheels Steer Without Turning",
+  "language": "en-US",
+  "scenes": [
+    {"asset": "scene-01-wheelset.png", "direction": "Low-angle close-up of a rail wheelset emphasizing subtly conical treads."},
+    {"asset": "scene-02-rolling-circles.png", "direction": "Educational cutaway showing a shifted axle contacting a larger circle on one side and smaller circle on the other."},
+    {"asset": "scene-03-curve.png", "direction": "Overhead cinematic view of a wheelset naturally following a broad railway curve."}
+  ]
+}

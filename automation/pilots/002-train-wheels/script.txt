@@ -1,0 +1,7 @@
+Train wheels are not flat. Their slight cone shape lets an entire axle steer without turning its wheels like a car.
+
+Both wheels are locked to the same axle, so they always rotate together. When the axle shifts toward one rail, that wheel touches the track on a wider part of its cone. Its effective rolling circle becomes larger, while the wheel on the other side rolls on a smaller circle.
+
+One rotation now carries the larger side farther, gently guiding the axle back toward the center. The same difference helps a wheelset follow broad curves with less flange contact and wear.
+
+So a train does not stay centered only because of the raised flanges. Much of the steering happens in the shape of the tread itself.

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#08090b">
+  <title>BuiltWhys Control Center</title>
+  <link rel="manifest" href="/assets/manifest.webmanifest">
+  <link rel="stylesheet" href="/assets/app.css?v=20260720-2">
+  <link rel="stylesheet" href="/assets/overrides.css?v=20260719-1">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><span class="mark">BW</span><div><strong>BuiltWhys</strong><small>Control Center</small></div></div>
+    <nav>
+      <button class="nav active" data-view="overview">Genel Bak&#305;&#351;</button>
+      <button class="nav" data-view="videos">Video Havuzu <span id="reviewBadge" class="badge">0</span></button>
+      <button class="nav" data-view="calendar">Yay&#305;n Takvimi</button>
+      <button class="nav" data-view="analytics">Analitik</button>
+      <button class="nav" data-view="system">Sistem</button>
+      <button class="nav" data-view="settings">Ayarlar</button>
+    </nav>
+    <div class="sidebar-foot"><i id="connectionDot"></i><span id="connectionText">Ba&#287;lan&#305;yor...</span></div>
+  </aside>
+  <main>
+    <header><div><p class="eyebrow">EVERY DESIGN HAS A REASON</p><h1 id="pageTitle">Genel Bak&#305;&#351;</h1></div><button id="refresh" class="ghost">Yenile</button></header>
+    <section id="overview" class="view active">
+      <div id="summaryCards" class="stats"></div>
+      <div class="split">
+        <article class="panel"><div class="panel-head"><h2>S&#305;radaki yay&#305;n</h2><button class="link" data-go="calendar">Takvimi a&#231;</button></div><div id="nextSchedule"></div></article>
+        <article class="panel"><div class="panel-head"><h2>Yedek g&#252;venli&#287;i</h2><button class="link" data-go="videos">Havuzu a&#231;</button></div><div id="reserveStatus"></div></article>
+      </div>
+    </section>
+    <section id="videos" class="view">
+      <div class="toolbar">
+        <input id="videoSearch" type="search" placeholder="Konu veya ba&#351;l&#305;k ara...">
+        <select id="languageFilter"><option value="">T&#252;m diller</option><option value="en-US">English</option><option value="tr-TR">T&#252;rk&#231;e</option></select>
+        <select id="channelFilter"><option value="builtwhys" selected>BuiltWhys</option><option value="">T&#252;m kanallar</option><option value="wildwhys">WildWhys</option><option value="worldwhys">WorldWhys</option></select>
+        <button id="newTopic" class="primary small">Yeni konu</button>
+        <span id="poolCount" class="muted"></span>
+      </div>
+      <input id="statusFilter" type="hidden" value="pending">
+      <div id="poolTabs" class="pool-tabs" role="tablist" aria-label="Video havuzu durumu">
+        <button type="button" class="pool-tab active" data-pool-view="pending"><span class="pool-tab-icon">&#9719;</span>Onay bekleyenler</button>
+        <button type="button" class="pool-tab" data-pool-view="pool"><span class="pool-tab-icon">&#10003;</span>Havuz / onaylananlar</button>
+        <button type="button" class="pool-tab" data-pool-view="rejected"><span class="pool-tab-icon">&#215;</span>Reddedilenler</button>
+        <button type="button" class="pool-tab" data-pool-view="published"><span class="pool-tab-icon">&#9654;</span>Yay&#305;nlananlar</button>
+      </div>
+      <div id="videoGrid" class="video-grid"></div>
+    </section>
+    <section id="visualpuzzles" class="view">
+      <div class="visual-lab-head panel">
+        <div><p class="eyebrow">NO LANGUAGE. PURE MOTION.</p><h2>BuiltWhys Visual Lab</h2><p>&#214;zg&#252;n 2D mekanizma bulmacalar&#305;; konu&#351;ma ve stok g&#246;r&#252;nt&#252; yok.</p></div>
+        <div class="visual-targets"><span><b id="visualPendingCount">0</b><small>/ 5 inceleme</small></span><span><b id="visualApprovedCount">0</b><small>/ 3 onayl&#305; yedek</small></span></div>
+      </div>
+      <div id="visualTabs" class="pool-tabs" role="tablist">
+        <button type="button" class="pool-tab active" data-visual-view="pending"><span class="pool-tab-icon">&#9719;</span>Onay bekleyenler</button>
+        <button type="button" class="pool-tab" data-visual-view="pool"><span class="pool-tab-icon">&#10003;</span>Onaylanan havuz</button>
+      </div>
+      <input id="visualStatusFilter" type="hidden" value="pending">
+      <p id="visualRecommendation" class="visual-recommendation"></p>
+      <div id="visualGrid" class="video-grid"></div>
+    </section>
+    <section id="calendar" class="view">
+      <article class="panel"><div class="panel-head"><div><h2>Varsay&#305;lan haftal&#305;k plan</h2><p>Sen planlamazsan onayl&#305; yedeklerden otomatik dolar.</p></div><button id="addSlot" class="primary small">Slot ekle</button></div><div id="weeklySlots" class="slot-row"></div></article>
+      <article class="panel"><div class="panel-head"><h2>&#214;n&#252;m&#252;zdeki yay&#305;nlar</h2><span class="legend"><i class="manual"></i>Elle <i class="auto"></i>Otomatik</span></div><div id="scheduleList" class="schedule-list"></div></article>
+    </section>
+    <section id="analytics" class="view">
+      <div class="analytics-actions"><button id="refreshAnalytics" class="primary small">Platform verilerini &#351;imdi yenile</button></div>
+      <article class="panel"><div class="panel-head"><div><h2>Kanal durumları</h2><p id="analyticsStatus" class="muted">Platform verileri yükleniyor.</p></div></div><div id="analyticsChannels" class="stats"></div></article>
+      <div id="analyticsCards" class="stats"></div>
+      <article class="panel"><div class="panel-head"><h2>Platform performansı</h2></div><div id="analyticsPlatformRows" class="service-list"></div></article>
+      <article class="panel"><div class="panel-head"><div><h2>&#304;zleyici &#252;lkeleri</h2><p id="geoStatus" class="muted">Son 90 g&#252;n, YouTube Analytics verisi.</p></div></div><div id="countryBars" class="country-bars"></div><div id="geoNotes" class="analytics-notes"></div></article>
+      <article class="panel"><div class="panel-head"><h2>En iyi videolar</h2></div><div class="table-wrap"><table><thead><tr><th>Video</th><th>Platform</th><th>&#304;zlenme</th><th>Be&#287;eni</th><th>Yorum</th><th>Payla&#351;&#305;m</th></tr></thead><tbody id="topVideos"></tbody></table></div></article>
+    </section>
+    <section id="system" class="view"><div id="hostCards" class="stats"></div><article class="panel"><div class="panel-head"><h2>Kanal fabrikas&#305;</h2><span class="muted">Kanal bazl&#305; nitelikli aday ve havuz hedefleri.</span></div><div id="factoryChannels" class="service-list"></div></article><article class="panel"><div class="panel-head"><h2>Servisler</h2><span class="muted">Son 90 saniyede heartbeat alan servis sa&#287;l&#305;kl&#305;d&#305;r.</span></div><div id="serviceList" class="service-list"></div></article></section>
+    <section id="settings" class="view">
+      <article class="panel settings-form"><h2>Otomasyon kurallar&#305;</h2>
+        <label>Minimum onayl&#305; yedek <input id="reserveMinimum" type="number" min="1" max="30"></label>
+        <label>Hedef video havuzu <input id="reserveTarget" type="number" min="1" max="50"></label>
+        <label>Takvim ufku (g&#252;n) <input id="scheduleHorizon" type="number" min="7" max="90"></label>
+        <label class="toggle"><input id="autoFill" type="checkbox"><span></span>Bo&#351; slotlar&#305; yedeklerden doldur</label>
+        <label class="toggle"><input id="publishingEnabled" type="checkbox"><span></span>Ger&#231;ek platform yay&#305;nlar&#305;n&#305; etkinle&#351;tir</label>
+        <label class="toggle"><input id="telegramNotifications" type="checkbox"><span></span>Telegram ar&#305;za/yay&#305;n bildirimleri</label>
+        <p class="warning">Ba&#287;lant&#305; testleri tamamlanmadan ger&#231;ek yay&#305;n se&#231;ene&#287;ini a&#231;ma.</p><button id="saveSettings" class="primary">Ayarlar&#305; kaydet</button>
+      </article>
+    </section>
+    <footer class="api-footer"><a href="https://www.youtube.com/channel/UC_owbRSmCX1dtpXXN5VX3MQ" target="_blank" rel="noopener"><img src="/assets/developed-with-youtube.png" alt="Developed with YouTube"></a><span><a href="/privacy" target="_blank">Privacy</a> · <a href="/terms" target="_blank">Terms</a> · <a href="/data-deletion" target="_blank">Data deletion</a></span></footer>
+  </main>
+  <dialog id="videoDialog"><button class="dialog-close" aria-label="Kapat">&times;</button><div id="videoDetail"></div></dialog>
+  <div id="toast" role="status"></div>
+  <script src="/assets/app.js?v=20260719-3" defer></script>
+  <script src="/assets/policy-ui.js?v=20260720-2" defer></script>
+</body>
+</html>

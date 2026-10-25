@@ -1,0 +1,13 @@
+{
+  "job_id": "batch-002",
+  "ai_disclosure_required": true,
+  "fact_sources": [
+    {"title": "TCRP Report 57: Track Design Handbook for Light Rail Transit", "publisher": "Transportation Research Board", "url": "https://onlinepubs.trb.org/onlinepubs/tcrp/tcrp_rpt_57-b.pdf", "accessed_at": "2026-07-15"},
+    {"title": "Integrated Model Predictive Control of High-Speed Railway Running Gears", "publisher": "arXiv research paper", "url": "https://arxiv.org/abs/2309.09769", "accessed_at": "2026-07-15"}
+  ],
+  "assets": [
+    {"type":"ai_generated_image","source_url":"local://automation/pilots/002-train-wheels/assets/scene-01-wheelset.png","license":"OpenAI generated output; project-owned use","commercial_use":true,"generation_status":"generated"},
+    {"type":"procedural_diagram","source_url":"local://automation/pilots/002-train-wheels/assets/scene-02-rolling-circles.png","license":"Project-generated original diagram","commercial_use":true,"generation_status":"generated"},
+    {"type":"procedural_diagram","source_url":"local://automation/pilots/002-train-wheels/assets/scene-03-curve.png","license":"Project-generated original diagram","commercial_use":true,"generation_status":"generated"}
+  ]
+}

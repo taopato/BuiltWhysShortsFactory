@@ -1,0 +1,85 @@
+{
+  "job_id": "batch-003",
+  "ai_disclosure_required": true,
+  "fact_sources": [
+    {
+      "title": "Operation, Maintenance and Testing of Escalators",
+      "publisher": "Indian Railways CAMTECH",
+      "url": "https://indianrailways.gov.in/railwayboard/uploads/directorate/eff_res/camtech/ElectricalEngineering/YearWise/Booklet%20on%20Operation%2C%20Maintenance%20%26%20Testing%20of%20Escalators.pdf",
+      "accessed_at": "2026-07-15"
+    },
+    {
+      "title": "Escalator and Moving Walk Braking Systems",
+      "publisher": "ASME",
+      "url": "https://www.asme.org/codes-standards/find-codes-standards/csab4410asmea1710-escalator-and-moving-walk-braking-systems",
+      "accessed_at": "2026-07-15"
+    }
+  ],
+  "assets": [
+    {
+      "type": "ai_generated_image",
+      "source_url": "local://automation/pilots/003-escalator-grooves/assets-v2/scene-01-hero.png",
+      "license": "Project-owned AI-generated original visual",
+      "commercial_use": true,
+      "generation_status": "generated"
+    },
+    {
+      "type": "stock_video",
+      "source_url": "https://www.pexels.com/video/an-escalator-with-stairs-and-a-yellow-line-17551130/",
+      "license": "Pexels License; edited as part of an original educational video",
+      "commercial_use": true,
+      "contributor": "K",
+      "contributor_url": "https://www.pexels.com/@kelly",
+      "local_file": "automation/pilots/003-escalator-grooves/assets-v2/scene-02-pexels.mp4"
+    },
+    {
+      "type": "stock_video",
+      "source_url": "https://www.pexels.com/video/escalators-in-a-subway-station-with-green-signs-26600321/",
+      "license": "Pexels License; edited as part of an original educational video",
+      "commercial_use": true,
+      "contributor": "Tiago Fagundes Soares",
+      "contributor_url": "https://www.pexels.com/@tiago-fagundes-soares-661985253",
+      "local_file": "automation/pilots/003-escalator-grooves/assets-v2/scene-03-pexels.mp4"
+    },
+    {
+      "type": "stock_video",
+      "source_url": "https://www.pexels.com/video/subway-escalator-17577389/",
+      "license": "Pexels License; edited as part of an original educational video",
+      "commercial_use": true,
+      "contributor": "Sérgio Carvalho",
+      "contributor_url": "https://www.pexels.com/@sergio-carvalho-3362939",
+      "local_file": "automation/pilots/003-escalator-grooves/assets-v2/scene-04-pexels.mp4"
+    },
+    {
+      "type": "stock_video",
+      "source_url": "https://www.pexels.com/video/busy-mall-escalator-scene-from-above-35200333/",
+      "license": "Pexels License; edited as part of an original educational video",
+      "commercial_use": true,
+      "contributor": "Saulo Nulo",
+      "contributor_url": "https://www.pexels.com/@shahcian",
+      "local_file": "automation/pilots/003-escalator-grooves/assets-v2/scene-05-pexels.mp4"
+    },
+    {
+      "type": "stock_video",
+      "source_url": "https://www.pexels.com/video/modern-melbourne-escalator-station-tour-35066724/",
+      "license": "Pexels License; edited as part of an original educational video",
+      "commercial_use": true,
+      "contributor": "Joolsmagools  ®️",
+      "contributor_url": "https://www.pexels.com/@joolsmagools",
+      "local_file": "automation/pilots/003-escalator-grooves/assets-v2/scene-06-pexels.mp4"
+    },
+    {
+      "type": "procedural_diagram",
+      "source_url": "local://automation/pilots/003-escalator-grooves/assets-v2/scene-07-diagram.png",
+      "license": "Project-generated original diagram",
+      "commercial_use": true
+    },
+    {
+      "type": "procedural_diagram",
+      "source_url": "local://automation/pilots/003-escalator-grooves/assets-v2/scene-08-diagram.png",
+      "license": "Project-generated original diagram",
+      "commercial_use": true
+    }
+  ],
+  "visual_strategy": "one original hero, five distinct Pexels clips, two original technical diagrams; no scene reuse"
+}

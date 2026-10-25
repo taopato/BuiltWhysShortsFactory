@@ -1,0 +1,25 @@
+{
+  "job_id": "replace-with-job-id",
+  "ai_disclosure_required": true,
+  "fact_sources": [
+    {
+      "title": "Primary or authoritative source",
+      "url": "https://example.org/source-one",
+      "accessed_at": "2026-07-15"
+    },
+    {
+      "title": "Independent corroborating source",
+      "url": "https://example.org/source-two",
+      "accessed_at": "2026-07-15"
+    }
+  ],
+  "assets": [
+    {
+      "type": "ai_generated_image",
+      "source_url": "local://generated/scene-01.png",
+      "license": "provider-commercial-terms",
+      "commercial_use": true,
+      "notes": "Store provider, model, prompt, and generation date here."
+    }
+  ]
+}

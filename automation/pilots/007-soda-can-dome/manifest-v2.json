@@ -1,0 +1,85 @@
+{
+  "job_id": "batch-007",
+  "ai_disclosure_required": true,
+  "fact_sources": [
+    {
+      "title": "Manufacturing process of DWI can",
+      "publisher": "Toyo Seikan Group",
+      "url": "https://www.toyo-seikan.co.jp/e/technology/can/making/di_can/",
+      "accessed_at": "2026-07-15"
+    },
+    {
+      "title": "Container bottom, method of manufacture, and method of testing",
+      "publisher": "United States Patent and Trademark Office",
+      "url": "https://patents.justia.com/patent/20050109787",
+      "accessed_at": "2026-07-15"
+    }
+  ],
+  "assets": [
+    {
+      "type": "ai_generated_image",
+      "source_url": "local://automation/pilots/007-soda-can-dome/assets-v2/scene-01-hero.png",
+      "license": "Project-owned AI-generated original visual",
+      "commercial_use": true,
+      "generation_status": "generated"
+    },
+    {
+      "type": "stock_video",
+      "source_url": "https://www.pexels.com/video/industrial-automated-machine-5532761/",
+      "license": "Pexels License; edited as part of an original educational video",
+      "commercial_use": true,
+      "contributor": "cottonbro studio",
+      "contributor_url": "https://www.pexels.com/@cottonbro",
+      "local_file": "automation/pilots/007-soda-can-dome/assets-v2/scene-02-pexels.mp4"
+    },
+    {
+      "type": "stock_video",
+      "source_url": "https://www.pexels.com/video/new-beer-in-cans-in-the-production-line-5532765/",
+      "license": "Pexels License; edited as part of an original educational video",
+      "commercial_use": true,
+      "contributor": "cottonbro studio",
+      "contributor_url": "https://www.pexels.com/@cottonbro",
+      "local_file": "automation/pilots/007-soda-can-dome/assets-v2/scene-03-pexels.mp4"
+    },
+    {
+      "type": "stock_video",
+      "source_url": "https://www.pexels.com/video/cool-beer-can-with-moisture-in-the-production-line-5532767/",
+      "license": "Pexels License; edited as part of an original educational video",
+      "commercial_use": true,
+      "contributor": "cottonbro studio",
+      "contributor_url": "https://www.pexels.com/@cottonbro",
+      "local_file": "automation/pilots/007-soda-can-dome/assets-v2/scene-04-pexels.mp4"
+    },
+    {
+      "type": "stock_video",
+      "source_url": "https://www.pexels.com/video/boy-and-girl-exchange-improvised-rings-from-soda-bottle-6188106/",
+      "license": "Pexels License; edited as part of an original educational video",
+      "commercial_use": true,
+      "contributor": "cottonbro studio",
+      "contributor_url": "https://www.pexels.com/@cottonbro",
+      "local_file": "automation/pilots/007-soda-can-dome/assets-v2/scene-05-pexels.mp4"
+    },
+    {
+      "type": "stock_video",
+      "source_url": "https://www.pexels.com/video/person-drinking-juice-7653589/",
+      "license": "Pexels License; edited as part of an original educational video",
+      "commercial_use": true,
+      "contributor": "cottonbro studio",
+      "contributor_url": "https://www.pexels.com/@cottonbro",
+      "local_file": "automation/pilots/007-soda-can-dome/assets-v2/scene-06-pexels.mp4"
+    },
+    {
+      "type": "procedural_diagram",
+      "source_url": "local://automation/pilots/007-soda-can-dome/assets-v2/scene-07-diagram.png",
+      "license": "Project-generated original diagram",
+      "commercial_use": true
+    },
+    {
+      "type": "procedural_diagram",
+      "source_url": "local://automation/pilots/007-soda-can-dome/assets-v2/scene-08-diagram.png",
+      "license": "Project-generated original diagram",
+      "commercial_use": true
+    }
+  ],
+  "visual_strategy": "one original hero, five distinct Pexels clips, two original technical diagrams; no scene reuse"
+}

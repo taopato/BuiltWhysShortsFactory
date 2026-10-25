@@ -1,0 +1,54 @@
+{
+  "channel_name": "BuiltWhys",
+  "youtube_handle": "@BuiltWhys",
+  "tagline": "Every design has a reason.",
+  "description": "Everyday objects are full of hidden engineering decisions. BuiltWhys explains the surprising reasons behind the things we use, see, and travel in—one concise story at a time. Original scripts, researched explanations, and licensed stock footage.",
+  "language": "en-US",
+  "languages": [
+    {"code": "en-US", "channel": "BuiltWhys", "voice": "en-US-AndrewMultilingualNeural", "status": "active"},
+    {"code": "tr-TR", "channel": "BuiltWhys TR", "voice": "tr-TR-AhmetNeural", "status": "planned"}
+  ],
+  "format": {
+    "duration_seconds_min": 35,
+    "duration_seconds_max": 58,
+    "aspect_ratio": "9:16",
+    "resolution": "1080x1920",
+    "hook_window_seconds": 2,
+    "target_words_min": 85,
+    "target_words_max": 135,
+    "minimum_unique_scenes": 7,
+    "target_unique_scenes": 8,
+    "maximum_scene_reuse": 1
+  },
+  "visual_policy": {
+    "stock_provider": "Pexels",
+    "target_stock_clips": 6,
+    "target_original_diagrams": 2,
+    "global_transition": "none",
+    "reuse_visual_pack_across_languages": true
+  },
+  "publishing": {
+    "automatic_public_upload": false,
+    "control_center_approval_required": true,
+    "telegram_role": "alerts_only",
+    "youtube_default_privacy": "public",
+    "weekly_candidate_count": 7,
+    "weekly_publish_target": 4,
+    "fallback_publish_count_if_no_response": 0,
+    "maximum_publications_per_day": 1
+  },
+  "distribution": {
+    "platforms": ["youtube", "instagram", "facebook"],
+    "publish_same_approved_story_to_all_platforms": true,
+    "schedule_timezone": "Europe/Istanbul",
+    "default_slots": ["MON 22:30", "WED 23:00", "FRI 22:00", "SUN 21:30"]
+  },
+  "prohibited_content": [
+    "celebrity voice or likeness cloning",
+    "movie, television, podcast, or creator clips without documented permission",
+    "uncited medical, financial, legal, political, or breaking-news claims",
+    "verbatim readings of articles, feeds, Reddit posts, or Wikipedia",
+    "generic slideshow templates with minimal variation",
+    "music without verified commercial rights"
+  ]
+}

@@ -1,0 +1,149 @@
+name: builtwhys
+
+x-app: &app
+  build:
+    context: .
+    dockerfile: Dockerfile
+    args:
+      DOCKER_BUILD_MIRROR: default
+      PIP_USE_OFFICIAL: 1
+  env_file:
+    - path: .env.automation
+      required: true
+  volumes:
+    - ./storage:/MoneyPrinterTurbo/storage
+    - ./automation/pilots:/MoneyPrinterTurbo/automation/pilots
+    - ./config.toml:/MoneyPrinterTurbo/config.toml:ro
+  restart: unless-stopped
+  logging:
+    driver: json-file
+    options:
+      max-size: 10m
+      max-file: "3"
+
+services:
+  api:
+    <<: *app
+    command: ["python3", "main.py"]
+    expose: ["8080"]
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/docs', timeout=5)"]
+      interval: 30s
+      timeout: 8s
+      retries: 3
+      start_period: 30s
+
+  control-center:
+    <<: *app
+    command: ["uvicorn", "automation.control_center_api:app", "--host", "0.0.0.0", "--port", "8090", "--workers", "1"]
+    expose: ["8090"]
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8090/healthz', timeout=5)"]
+      interval: 20s
+      timeout: 8s
+      retries: 3
+      start_period: 15s
+
+  ollama:
+    image: ollama/ollama:0.12.11
+    volumes:
+      - ollama-models:/root/.ollama
+    expose: ["11434"]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  ollama-init:
+    image: ollama/ollama:0.12.11
+    environment:
+      OLLAMA_HOST: http://ollama:11434
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-qwen3:4b}
+    entrypoint: ["/bin/sh", "-c"]
+    command: ["ollama pull $$OLLAMA_MODEL"]
+    depends_on:
+      ollama:
+        condition: service_healthy
+    restart: "no"
+
+  producer-worker:
+    <<: *app
+    command: ["python3", "automation/producer_worker.py"]
+    environment:
+      MONEYPRINTER_API_BASE: http://api:8080/api/v1
+      OLLAMA_BASE_URL: http://ollama:11434/v1
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-qwen3:4b}
+    depends_on:
+      api:
+        condition: service_healthy
+      ollama-init:
+        condition: service_completed_successfully
+
+  scheduler-worker:
+    <<: *app
+    command: ["python3", "automation/scheduler_worker.py"]
+    depends_on:
+      control-center:
+        condition: service_healthy
+
+  publisher-worker:
+    <<: *app
+    command: ["python3", "automation/publisher_worker.py"]
+    depends_on:
+      control-center:
+        condition: service_healthy
+
+  analytics-worker:
+    <<: *app
+    command: ["python3", "automation/analytics_worker.py"]
+    depends_on:
+      control-center:
+        condition: service_healthy
+
+  drive-archive-worker:
+    <<: *app
+    command: ["python3", "automation/drive_archive_worker.py"]
+    depends_on:
+      control-center:
+        condition: service_healthy
+
+  backup-worker:
+    <<: *app
+    command: ["python3", "automation/backup_worker.py"]
+    depends_on:
+      control-center:
+        condition: service_healthy
+
+  health-monitor:
+    <<: *app
+    command: ["python3", "automation/health_monitor.py"]
+    depends_on:
+      api:
+        condition: service_healthy
+      control-center:
+        condition: service_healthy
+
+  caddy:
+    image: caddy:2.10.2-alpine
+    env_file:
+      - path: .env.automation
+        required: true
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./Caddyfile.control-center:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    depends_on:
+      control-center:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  ollama-models:
+  caddy-data:
+  caddy-config:
