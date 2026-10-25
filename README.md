@@ -1,6 +1,7 @@
 > **BuiltWhys uyarlaması:** Üretim, Control Center, yayın ve 3D pilot akışlarını Türkçe
 > anlamak için [sistem mimarisi ve diyagramlar](docs/BUILTWHYS_ARCHITECTURE_TR.md),
 > [kilit pilotu değerlendirmesi](docs/LOCK_PILOT_REVIEW_TR.md) ve
+> [v3 teknik sahne şartnamesi](docs/LOCK_V3_TECHNICAL_BRIEF_TR.md) ile
 > [GitHub yayın güvenliği](docs/GITHUB_PUBLICATION_TR.md) belgelerine bakın.
 > Aşağıdaki özgün MoneyPrinterTurbo açıklaması ve MIT atfı korunmuştur.
 
