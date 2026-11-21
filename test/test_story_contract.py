@@ -23,6 +23,11 @@ class StoryContractTests(unittest.TestCase):
         story = json.loads(path.read_text(encoding="utf-8"))
         self.assertEqual(validate_story(story), [])
 
+    def test_thermostat_storyboard_passes(self):
+        path = ROOT / "automation" / "pilots_3d" / "thermostat_storyboard_v1.json"
+        story = json.loads(path.read_text(encoding="utf-8"))
+        self.assertEqual(validate_story(story), [])
+
     def test_rejects_unrelated_or_static_visual_beats(self):
         for beat in self.story["beats"]:
             beat["visible_action"] = "camera pans over a still image"

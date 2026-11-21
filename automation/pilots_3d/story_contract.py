@@ -13,7 +13,7 @@ from pathlib import Path
 from typing import Any
 
 
-ALLOWED_TEMPLATES = {"pin_tumbler_lock", "seatbelt_retractor"}
+ALLOWED_TEMPLATES = {"pin_tumbler_lock", "seatbelt_retractor", "room_thermostat"}
 REQUIRED_BEAT_FIELDS = {"start", "end", "narration", "visible_action", "objects"}
 
 

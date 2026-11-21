@@ -1,0 +1,22 @@
+{
+  "template": "room_thermostat",
+  "language": "en-US",
+  "working_title": "Why turning your thermostat higher won't heat the room faster",
+  "fact_sources": [
+    {
+      "claim": "A room thermostat senses air temperature, calls for heat below the setting, and stops that call at the setting. Raising the setting does not speed up heating.",
+      "url": "https://homecomfort-techlit.resideo.com/emeadocuments/pim%20-%20renamed/s42010941-007uk07.pdf"
+    }
+  ],
+  "beats": [
+    {"start": 0, "end": 2, "narration": "Higher won't heat this room faster.", "visible_action": "Thermostat dial jumps from 22 to 30 degrees while the cold room stays blue", "objects": ["thermostat", "temperature display", "room"]},
+    {"start": 2, "end": 5, "narration": "The thermostat is a switch, not a gas pedal.", "visible_action": "Transparent thermostat reveals a single contact closing, with no speed control", "objects": ["thermostat", "switch contact"]},
+    {"start": 5, "end": 9, "narration": "It measures the air. Right now, it's eighteen degrees.", "visible_action": "Air particles drift through a sensor; measured temperature reads 18", "objects": ["air", "sensor", "18 degree display"]},
+    {"start": 9, "end": 13, "narration": "You ask for twenty-two. It calls the boiler for heat.", "visible_action": "Setpoint becomes 22; a signal travels to the boiler control", "objects": ["22 degree setpoint", "control line", "boiler"]},
+    {"start": 13, "end": 17, "narration": "The boiler heats water, which flows through the radiator.", "visible_action": "Boiler burner lights; orange water moves through pipes into radiator", "objects": ["boiler", "water pipe", "radiator"]},
+    {"start": 17, "end": 21, "narration": "Warm air spreads through the room as the temperature climbs.", "visible_action": "Heat rises from radiator and room counter advances from 18 to 21", "objects": ["radiator", "warm air", "room counter"]},
+    {"start": 21, "end": 25, "narration": "At twenty-two, the thermostat stops asking for heat.", "visible_action": "Room counter reaches 22; thermostat contact opens; heat call stops", "objects": ["room counter", "switch contact", "boiler"]},
+    {"start": 25, "end": 30, "narration": "Thirty degrees only makes it run longer, not faster.", "visible_action": "Side-by-side setpoints 22 and 30 share the same heating rate; the 30 line continues longer", "objects": ["comparison graph", "22 degree setpoint", "30 degree setpoint"]}
+  ],
+  "loop_resolution": "The 30 degree dial at the end matches the first frame's mistaken adjustment."
+}
