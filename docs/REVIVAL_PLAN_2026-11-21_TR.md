@@ -15,8 +15,14 @@ otomasyona bağlanmadan önce ölçülecek kapıları tanımlar.
 - Sunucudaki Python kodu GitHub `main`'den ileride; doğrudan eski kodu
   yayımlamak canlı düzeltmeleri geri alır. Yedekler sunucudaki
   `/opt/builtwhys/storage/backups/` dizinindedir.
-- CPU-only sunucuda eski sinematik kilit sahnesi yaklaşık 100 saniye/kare
-  sürüyor. Tamamını bu yöntemle render etmek video başına yaklaşık 24 saat.
+- CPU-only sunucuda eski sinematik kilit sahnesi 64 örneklemde yaklaşık 100
+  saniye/kare sürüyor. Tamamını bu ayarla render etmek yaklaşık 24 saat.
+- Aynı `.blend` dosyasında ve iki düşük öncelikli CPU iş parçacığıyla ölçülen
+  tek-kare deneyi: yüzde 50 çözünürlük/64 örneklem 87,17 saniye; tam
+  çözünürlük/16 örneklem 28,73 saniye; tam çözünürlük/8 örneklem 15,45 saniye.
+  Tepe RAM yaklaşık 600 MB. Üç kareyi de görsel olarak inceledik: 8 örneklem
+  kullanılabilir şema görünümü veriyor, ancak materyal ve gerçekçilik sorunu
+  devam ediyor. Bu tek kareden tüm videonun süresini kesin kabul etmiyoruz.
 
 ## Sıra
 
@@ -32,7 +38,9 @@ otomasyona bağlanmadan önce ölçülecek kapıları tanımlar.
    kontroldür; iddianın doğruluğunu veya estetik kaliteyi otomatik kanıtlamaz.
 4. Sunucuda kısa 3D çekimleri bir kez render edip önbelleğe al; hareketli
    açıklama katmanlarını ve altyazıları daha hafif bir compositor ile üret.
-   Tam EEVEE render, tüm 30–40 saniye için varsayılan olmamalı.
+   Tam EEVEE render, tüm 30–40 saniye için varsayılan olmamalı. Başlangıç
+   deneyi 8 örneklem/tam çözünürlük; hareketli sahnelerde titreme ve gürültü
+   incelenmeden üretim ayarı olarak sabitlenmemeli.
 5. İki pilotun MP4 çıktısını telefonda ve bilgisayarda izle: ilk iki saniye,
    mekanik doğruluk, söylenenle görülenin uyumu, okunabilir altyazı, ses,
    telif kaydı, render süresi ve disk tepe kullanımı. Kullanıcı kabul etmeden

@@ -82,3 +82,28 @@ sequence still needs a continuous, readable close-up. See
 `docs/LOCK_PILOT_REVIEW_TR.md` and `docs/BUILTWHYS_ARCHITECTURE_TR.md` for the
 assessment and pipeline diagrams. This pilot does not satisfy current
 production delivery gates and must not be auto-published.
+
+## Controlled revival pilot (2026-11-21)
+
+`story_contract.py` validates the sourced, 30-second `lock_storyboard_v5.json`
+and `seatbelt_storyboard_v1.json` before any render. It rejects missing sources,
+overlong/repeated-action beats, narration that cannot fit the beat, and unsupported templates.
+It does **not** prove factual or visual quality; both still require review.
+
+`lock_causal_shot_v5.py` creates a new five-second cutaway where the moving
+key's actual notch height at each chamber determines the rise of that pin
+pair. The camera shows the key and pins together. Run Blender with
+`--python automation/pilots_3d/lock_causal_shot_v5.py -- build --out DIR`, then
+render the saved `.blend` with `render_range.py -- --start 1 --end 120 --step 1
+--samples 8 --out DIR/frames`. `compose_lock_v5.py` replaces seconds 10.1–15.1
+of the prior 36-second human/door review pilot with this new shot while keeping
+the original English narration. The resulting MP4 is a **review candidate**,
+not a new production format or an approved upload. The seat-belt pilot currently
+has a storyboard but no modeled scene or MP4.
+
+Measured on the CPU-only VPS with low process priority: the new, simpler
+cutaway frame took about 8 seconds at 720×1280/8 EEVEE samples and about 68 MB
+peak scene memory. A complete five-second shot therefore needs roughly
+15–20 minutes, subject to server load. The much heavier v4 scene took 15.45
+seconds/frame even at 8 samples. Use short 3D shots, not 30–40 seconds of
+continuous full-resolution rendering, until a full-pilot benchmark is complete.
