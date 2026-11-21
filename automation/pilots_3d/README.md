@@ -107,3 +107,12 @@ peak scene memory. A complete five-second shot therefore needs roughly
 15–20 minutes, subject to server load. The much heavier v4 scene took 15.45
 seconds/frame even at 8 samples. Use short 3D shots, not 30–40 seconds of
 continuous full-resolution rendering, until a full-pilot benchmark is complete.
+
+On 2026-11-22 the physical-profile shot completed all 120 server-rendered
+frames in 911.36 seconds. The assembled review MP4 is at
+`/opt/builtwhys/storage/3d-pilots/lock-causal-v5-final2/lock-causal-hybrid-v5-review.mp4`
+on the server and under `D:/CreatorLab/ShortsFactory/pilots/lock-v5/` locally.
+It is 36.02 seconds, 720×1280, 24 fps, H.264/AAC; complete decode and
+black-frame check passed. The human/door scene and new cutaway still have
+different art directions, so this is not approved for publication. The
+seat-belt pilot remains a storyboard only.
