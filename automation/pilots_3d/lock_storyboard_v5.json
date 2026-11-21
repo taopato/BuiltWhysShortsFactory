@@ -1,0 +1,22 @@
+{
+  "template": "pin_tumbler_lock",
+  "language": "en-US",
+  "working_title": "Your key doesn't push the door open",
+  "fact_sources": [
+    {
+      "claim": "Key cuts position pin pairs so the cylinder core can turn; the cam actuates the lock bolt.",
+      "url": "https://www.abus.com/usa/Available-resources/Glossary/Key-systems"
+    }
+  ],
+  "beats": [
+    {"start": 0, "end": 2, "narration": "Your key doesn't push the door open.", "visible_action": "Hand pulls a key from a pocket toward a locked door", "objects": ["person", "key", "door"]},
+    {"start": 2, "end": 5, "narration": "It solves a tiny puzzle inside the lock.", "visible_action": "Camera follows key into the cylinder, door becomes transparent", "objects": ["key", "cylinder", "door"]},
+    {"start": 5, "end": 9, "narration": "Without a key, these pin pairs block the cylinder.", "visible_action": "Spring-loaded pin pairs cross the highlighted shear line", "objects": ["pins", "springs", "core"]},
+    {"start": 9, "end": 13, "narration": "Each cut on the key lifts a pin a different distance.", "visible_action": "Key slides in and successive pin pairs rise different amounts", "objects": ["key cuts", "pins"]},
+    {"start": 13, "end": 17, "narration": "The right key lines every split up with one boundary.", "visible_action": "All pin-pair splits settle on the shear line", "objects": ["pins", "shear line"]},
+    {"start": 17, "end": 21, "narration": "Now the inner cylinder can turn.", "visible_action": "Core rotates while upper pins stay in the housing", "objects": ["core", "housing", "pins"]},
+    {"start": 21, "end": 25, "narration": "That rotation moves the cam and pulls back the bolt.", "visible_action": "Cam rotates and retracts the door bolt", "objects": ["cam", "bolt"]},
+    {"start": 25, "end": 30, "narration": "The pins line up, the bolt moves, and the door opens.", "visible_action": "Person opens the door; camera returns to key close-up", "objects": ["person", "door", "key"]}
+  ],
+  "loop_resolution": "The final key close-up can cut directly to the first frame of the hand holding the same key."
+}
