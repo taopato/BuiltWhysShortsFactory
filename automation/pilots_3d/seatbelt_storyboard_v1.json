@@ -1,0 +1,26 @@
+{
+  "template": "seatbelt_retractor",
+  "language": "en-US",
+  "working_title": "Why your seat belt locks when you pull it fast",
+  "fact_sources": [
+    {
+      "claim": "Emergency locking retractors can respond to rapid webbing withdrawal or vehicle acceleration; designs differ by vehicle.",
+      "url": "https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/tp-209-08_tag.pdf"
+    },
+    {
+      "claim": "A rapid pull can make a web-sensing seat belt retractor lock until belt tension is released.",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2013/MC-10134736-9999.pdf"
+    }
+  ],
+  "beats": [
+    {"start": 0, "end": 2, "narration": "Why did your belt freeze?", "visible_action": "Person quickly pulls the belt and it stops short", "objects": ["person", "seat belt", "car seat"]},
+    {"start": 2, "end": 6, "narration": "A slow pull lets the strap unwind normally.", "visible_action": "Same hand slowly pulls belt; inset spool rotates freely", "objects": ["belt", "spool", "hand"]},
+    {"start": 6, "end": 10, "narration": "A fast pull can trigger the emergency lock.", "visible_action": "Hand pulls faster and the spool's locking state changes", "objects": ["belt", "retractor", "lock indicator"]},
+    {"start": 10, "end": 14, "narration": "The retractor stops more belt from feeding out.", "visible_action": "Cutaway shows spool halted while belt becomes taut", "objects": ["spool", "belt", "housing"]},
+    {"start": 14, "end": 18, "narration": "Some retractors also respond to sudden vehicle movement.", "visible_action": "Car decelerates; second trigger indicator changes state", "objects": ["car", "retractor", "vehicle-motion indicator"]},
+    {"start": 18, "end": 22, "narration": "But a gentle tug should still feel easy.", "visible_action": "Side-by-side slow pull and fast pull compare their outcomes", "objects": ["slow belt", "fast belt", "retractor"]},
+    {"start": 22, "end": 26, "narration": "Release the tension, then pull again slowly.", "visible_action": "Person releases belt slightly; it retracts and then pulls normally", "objects": ["person", "belt", "spool"]},
+    {"start": 26, "end": 30, "narration": "That sudden stop is a safety feature, not a jam.", "visible_action": "Person buckles belt and camera returns to the original pull", "objects": ["person", "belt", "buckle"]}
+  ],
+  "loop_resolution": "End on the same belt and hand as the opening, ready for the fast-pull cut. Internal latch geometry remains illustrative until checked against a specified retractor model."
+}

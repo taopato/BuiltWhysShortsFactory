@@ -18,6 +18,11 @@ class StoryContractTests(unittest.TestCase):
     def test_lock_storyboard_passes(self):
         self.assertEqual(validate_story(self.story), [])
 
+    def test_seatbelt_storyboard_passes(self):
+        path = ROOT / "automation" / "pilots_3d" / "seatbelt_storyboard_v1.json"
+        story = json.loads(path.read_text(encoding="utf-8"))
+        self.assertEqual(validate_story(story), [])
+
     def test_rejects_unrelated_or_static_visual_beats(self):
         for beat in self.story["beats"]:
             beat["visible_action"] = "camera pans over a still image"
